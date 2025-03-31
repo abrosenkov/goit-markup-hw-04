@@ -169,6 +169,8 @@ ul, ol {
   margin: 0 auto;
   background-repeat: no-repeat;
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/main-bg.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 .main-title {
@@ -270,7 +272,7 @@ ul, ol {
 }
 
 .our-team-item {
-  background: #fff;
+  background-color: #fff;
 }
 
 .our-team-list {
@@ -279,14 +281,13 @@ ul, ol {
 }
 
 .our-team-item {
-  padding-bottom: 32px;
   width: calc((100% - 72px) / 4);
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
       border-radius: 0 0 4px 4px;
 }
 
 .our-team-item-wrapper {
-  padding: 32px 0 8px;
+  padding: 32px 0;
   text-align: center;
 }
 
@@ -305,6 +306,7 @@ ul, ol {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  margin-bottom: 8px;
 }
 
 .our-team-social-list {
@@ -312,6 +314,10 @@ ul, ol {
   gap: 24px;
   align-items: center;
   justify-content: center;
+}
+
+.our-team-link-icon {
+  fill: #f4f4fd;
 }
 
 .social-item-link {
@@ -416,8 +422,11 @@ ul, ol {
 
 .footer-container {
   display: flex;
-  align-items: center;
-  gap: 120px;
+  align-items: baseline;
+}
+
+.footer-content {
+  margin-right: 120px;
 }
 
 .footer-logo {
@@ -466,4 +475,8 @@ color: #f4f4fd;
 .footer-social-item-link:hover,
 .footer-social-item-link:focus {
   background-color: #31d0aa;
+}
+
+.footer-social-link-icon {
+  fill: #f4f4fd;
 }
